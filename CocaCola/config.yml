@@ -1,0 +1,5 @@
+#Config file for CocaCola
+commands:
+#Commands to execute if the player survives
+#{player} = the player that survives
+- say {player} refreshed!
