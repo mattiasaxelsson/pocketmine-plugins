@@ -8,7 +8,7 @@ commands:
   cocacola:
     aliases:
       - cc
-    description: "Thirst stops here... Have a Coke. Get health or die of deliciousness overload."
+    description: "Thirst stops here... Have a Coke. Get health and food or die of deliciousness overload."
     permission: cocacola.command.me
     usage: /cocacola
 permissions:
