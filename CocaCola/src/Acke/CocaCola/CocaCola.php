@@ -19,7 +19,7 @@ class CocaCola extends PluginBase{
 		public function onCommand(CommandSender $sender, Command $command, $label, array $args){
 				if(strtolower($command->getName()) == "cocacola"){
 						if($sender instanceof Player){
-								if(!($sender->hasPermission("cocacola") || $sender->hasPermission("cocacola.command") || $sender->hasPermission("cocacola.command.me"))) {
+								if(!($sender->hasPermission("cocacola") || $sender->hasPermission("cocacola.command") || $sender->hasPermission("cocacola.command.cocacola"))) {
 										return false;
 								}
 						if(mt_rand(1, 20) == 1){

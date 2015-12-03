@@ -1,6 +1,6 @@
 name: CocaCola
 main: Acke\CocaCola\CocaCola
-version: 1.0
+version: 1.0.1
 api: "1.13.0"
 author:
   - Acke
@@ -9,17 +9,17 @@ commands:
     aliases:
       - cc
     description: "Thirst stops here... Have a Coke. Get health and food or die of deliciousness overload."
-    permission: cocacola.command.me
+    permission: cocacola.command.cocacola
     usage: /cocacola
 permissions:
   cocacola:
-    default: false
+    default: true
     description: "Allows access of all CocaCola features"
     children:
       cocacola.command:
-        default: false
+        default: true
         description: "Allows usage of all CocaCola commands"
         children:
-          cocacola.command.me:
+          cocacola.command.cocacola:
             default: true
             description: "Allows usage of /cocacola"
